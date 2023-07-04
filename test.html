@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adding Pictures in a Flexbox Layout</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 600px; /* Adjust the total height as needed */
+        }
+
+        .flex-item {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-basis: 50%;
+        }
+
+        .row img {
+            width: auto;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="row">
+                <img src="image1.jpg" alt="Picture 1">
+            </div>
+            <div class="row">
+                <img src="image2.jpg" alt="Picture 2">
+            </div>
+        </div>
+        <div class="flex-item">
+            <img src="image3.jpg" alt="Picture 3">
+        </div>
+    </div>
+</body>
+</html>
